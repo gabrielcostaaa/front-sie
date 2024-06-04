@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import './App.css'
-import Header from './componets/Header'
 import UserList from './componets/UserList'
+import LoginPage from './componets/LoginPage'
 
 const api = axios.create({
   baseURL: 'http://localhost:3333'
@@ -22,8 +22,8 @@ useEffect(() => {
 
 return (
   <div className="flex flex-col items-center justify-center min-h-screen p-4">
-    <Header />
-    <UserList users={users} />
+    <LoginPage />
+    {/* <UserList users={users} /> */}
   </div>
 );
 }
