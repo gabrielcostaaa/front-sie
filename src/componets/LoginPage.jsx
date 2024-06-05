@@ -1,18 +1,17 @@
 import React from "react"
+import FormLogin from "./FormLogin"
 
 function LoginPage() {
     return (
-      <div class="grid grid-cols-3 h-[56rem] w-[120rem]">
-        <div class="col-span-2 bg-slate-100">
-            Esta div ocupa metade da tela
+      <div className="flex flex-row w-full h-screen">
+        <div className="hidden lg:flex lg:basis-3/4 w-full bg-gray-200 bg-sie bg-cover bg-center bg-no-repeat">
         </div>
-        <div class="bg-green-500">
-          <div>
-              <img src="/logo.png" alt="Logo" className="w-16 h-16"/>
+        <div className="h-full lg:flex lg:basis-1/4 w-full bg-white">
+          <div className="w-full px-12 py-12">
+              <img src="/logo-sie-2024-png.png" alt="Logo" className="w-24 h-24"/>
               <main>
-                <header>
-                  <h1>Prazer em ver você novamente</h1>
-                </header>
+                <header></header>
+                <FormLogin />
               </main>
           </div>
         </div>

@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'sans': ['Montserrat'],
+    },
+    backgroundImage: {
+      'sie': "url('/bg.jpg')"
+    }
   },
   plugins: [],
 }
